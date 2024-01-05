@@ -1,0 +1,335 @@
+% main_bsiMC_ufu.tex v1.0, Thiago Pirola Ribeiro
+% adaptado do modelo PPGCO - main_ppgco_ufu.tex v1.0, Lásaro Camargos e Denise Guliato
+% Criacao: 2019-03-08
+% ------------------------------------------------------------------------
+% Atualizações.
+% ------------------------------------------------------------------------
+\documentclass{bsimc}
+%Não altere o comando seguinte. O título de seu trabalho será especificado mais adiante.
+\title{Template de Monografia do BSI-MC}
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{cmap}				% Mapear caracteres especiais no PDF
+\usepackage{lmodern}				% Usa a fonte Latin Modern			
+\usepackage{makeidx}            	% Cria o indice
+\usepackage{hyperref}  			% Controla a formação do índice
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}			% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			% Lista de simbolos
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage[bottom]{footmisc}
+% ---
+
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo eesc
+% ---
+\usepackage{lipsum}				       % para geração de dummy text
+\usepackage[printonlyused]{acronym}
+\usepackage[table]{xcolor}
+% ---
+
+% ---
+% Insira aqui os pacotes utilizados por você
+% ---
+\hyphenpenalty=5000 
+\tolerance=1000 
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+%
+% Título:
+%	1. Título em português
+%	2. Título em inglês
+\titulo{Redesign da Interface do Sistema DebugandoED e Investigação das Percepções de Estudantes e Profissionais sobre a Proposta}
+
+% Colocar aqui ate 5 palavras-chave do trabalho
+\keyword{Experiencia de usuário}
+\keyword{Interface de usuário}
+\keyword{Usabilidade}
+\keyword{Comunicabilidade}
+\keyword{Jackob Nilsen e Gestalt}
+
+%
+% Autor:
+%	1. Nome completo do autor
+%	2. Formato de nome para bibliografia
+\autor{Felipe A. Justino Zanetti}{Zanetti, F. A. J.}
+% Cidade
+\local{Monte Carmelo - MG}
+%
+% Ano de defesa
+\date{2023}
+% Área de concentração da pesquisa
+\areaconcentracao{Sistemas de Informação}
+% Nome do orientador
+\orientador{Prof. Dr. Thiago Pirola Ribeiro}
+% Nome do coorientador
+%\coorientador{Nome completo do coorientador}
+% -
+
+
+% informações do PDF
+\hypersetup{
+	pdftitle={\imprimirtitulo},
+	pdfauthor={\imprimirautor},
+	pdfsubject={\imprimirpreambulo},
+%	pdfkeywords=\@resumokw,
+	pdfproducer={LaTeX with abnTeX2}, 	% producer of the document
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=black,          	% color of internal links
+	citecolor=black,        		% color of links to bibliography
+	filecolor=magenta,      		% color of file links
+	urlcolor=black,
+	bookmarksdepth=4
+}
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Compila a lista de abreviaturas e siglas
+% ---
+\makenomenclature
+% ---
+
+% ---
+% Inserir folha de aprovação
+%
+% Caso o comando \inserirfolhaaprovacao seja definido, a a folha de aprovação
+% será inserida. Além disso, conforme Resolução CoPGr 5890, as informações 
+% de rodapé são inseridas apropriadamente na folha de rosto.
+%
+% CUIDADO: Esta opção deve ser preenchida antes do comando \maketitle
+% ---
+% baseie-se no modelo desse documento e gere a sua folha de %rosto em arquivo pdf.
+
+%\inserirfolhaaprovacao{folhaAprovacao.pdf}
+% ---
+
+% ----
+% Início do documento
+% ----
+
+\begin{document}
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PRÉ-TEXTUAIS
+	% ----------------------------------------------------------
+	\pretextual
+	
+	% ---
+	% Insere Capa, Folha de rosto, Ficha catalográfica (se inserida)
+	% e folha de aprovação (se inserida).
+	% ---
+	\maketitle
+	
+	
+	% ---
+	% Dedicatória - obrigatório somente para TCC 2
+	% ---
+	\imprimirdedicatoria{Dedico este trabalho à incomparável força de vontade, a chama inextinguível que reside em cada um de nós. À ela que, mesmo nos momentos de maior adversidade, nos impulsiona a seguir adiante, a transcender obstáculos e a redefinir nossos próprios limites. A força de vontade é o silencioso motor da perseverança e a essência que transforma sonhos em realidade. Que esta homenagem sirva como um lembrete da potência que carregamos dentro de nós e do poder transformador da determinação.}
+	% ---
+	
+	% ---
+	% Agradecimentos - obrigatório somente para TCC 2
+	% ---
+	\imprimiragradecimentos{Primeiramente, gostaria de expressar minha mais profunda gratidão á minha família, alicerce constante de amor e apoio, meu eterno obrigado. Em especial à minha mãe, Sandra, cuja fé inabalável em mim serviu como bússola nos momentos em que duvidava de mim mesmo. Sua crença em meu potencial foi a chama que me impulsionou mesmo nos dias mais sombrios.
+ 
+    Estendo meus sinceros agradecimentos ao meu orientador, Prof. Dr. Thiago Pirola Ribeiro. Sua paciência, dedicação e orientação não só iluminaram meu caminho acadêmico, mas também moldaram muitos dos valores que carrego hoje. Os anos de mentoria sob sua supervisão foram fundamentais para minha formação e crescimento pessoal.
+
+    A todos os professores que cruzaram meu caminho durante esta trajetória, meu sincero agradecimento. Cada um de vocês, com sua singularidade, expertise e paixão pelo ensino, contribuiu de maneira inestimável para minha formação. Vocês são a prova viva de que a educação transforma vidas.
+    
+    Por fim, gostaria de agradecer a todos que, direta ou indiretamente, fizeram parte desta jornada. Cada gesto, palavra de incentivo, crítica construtiva ou simples presença foi essencial para que eu chegasse até aqui. A todos vocês, minha eterna gratidão.}
+	% ---
+	
+	% ---
+	% Epígrafe - obrigatório somente para TCC 2
+	% ---
+	\imprimirepigrafe{
+		``Faça ou não faça. Tentativa não há.''\\
+		(Mestre Yoda)
+	}
+	% ---
+
+	% ---
+	% RESUMO - obrigatório somente para TCC 2
+	% ---
+	
+	% Resumo em português
+	\begin{resumo}
+ 
+Este trabalho aborda o design de interfaces de sistemas, destacando temas como usabilidade, comunicabilidade, acessibilidade, \ac{UX}, \ac{UI} e técnicas de avaliação da usabilidade. Apresenta uma revisão teórica aprofundada, discutindo conceitos propostos por profissionais renomados, em conjunto com princípios da psicologia da forma, Gestalt, e diretrizes contemporâneas de design, incluindo o Material Design.
+
+O objetivo geral é realizar um levantamento sobre temas atuais de \ac{IHC} na área de design de interfaces, com foco em \ac{UX} e \ac{UI}, aplicando esses conceitos na prática.
+
+Isso será exemplificado por meio de um estudo de caso real envolvendo uma plataforma didática web. Para validar a aplicação prática desses conceitos, foi conduzida uma pesquisa por questionário com dois grupos: estudantes e profissionais da área, comparando as telas do sistema web com os conceitos em prática.
+
+Este estudo proporciona uma compreensão aprofundada dos aspectos cruciais no design de interfaces, contribuindo para o avanço no entendimento das práticas contemporâneas de \ac{IHC} e evidenciando a aplicação prática desses conceitos em situações do mundo real.
+
+    %O resumo deve ressaltar o objetivo, o método, os resultados e as conclusões do trabalho. A ideia não é explicar como você fez... isso que você tinha colocado foi para a Conclusão.
+
+    %O resumo de TCC é uma pequena parte do trabalho, mas nem por isso não deve seguir uma estrutura. Na verdade, algumas questões devem estar bem clarificadas nessa parte, por exemplo:
+
+    %Tema: trata-se do assunto que será abordado. É necessário citar o problema e o contexto relacionado a ele.
+    
+    %Objetivo(s): deve-se apontar o objetivo do trabalho, da pesquisa realizada. Ou seja, citar qual o propósito principal.
+    
+    %Metodologia: no resumo também deve estar, se necessário, a metodologia (por exemplo, o tipo de pesquisa realizada) que foi utilizada para a investigação.
+    
+    %Considerações finais: as considerações finais ou a conclusão da pesquisa deve estar, de maneira muito sucinta, nessa parte do texto. Pode-se mencionar os resultados obtidos, por exemplo.
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+%		Este trabalho tem como objetivo, realizar um levantamento bibliográfico sobre as áreas de design de interfaces tais como, \ac{UX} e \ac{UI}, demonstrando como elas são grandes aliadas no desenvolvimento de interfaces gráficas, seja, em sites, aplicações mobile ou programas de computador entre outros.
+		
+%		Juntamente será analisado e estudado, técnicas e conceitos amplamente utilizados nos dias de hoje para o aprimoramento da interface da plataforma web didática para auxiliar o ensino de Estrutura de Dados, cujo objetivo, segundo \cite{debugandoed} é utilizar a tecnologia disponível como um instrumento para tornar o conteúdo mais atrativo, compreensível e motivador para os estudantes, sendo assim, o desenvolvimento de boas praticas e interfaces intuitivas e agradáveis ao usuário final é de grande importância.
+		
+%		Espera-se que está pesquisa bibliográfica possa favorecer a relação do usuário final e destacar a importância dos estudos na elaboração de interfaces gráficas, tanto para os designers e desenvolvedores que pensam na solução quanto pelos usuários que a experienciam.
+		
+%Este trabalho buscou aprofundar a compreensão de elementos fundamentais no design de interfaces de sistemas, abordando temas como usabilidade, comunicabilidade, acessibilidade, \ac{UX}, \ac{UI} e técnicas de avaliação. Para isso, realizou-se uma revisão teórica abrangente, discutindo conceitos de profissionais renomados, como Jakob Nielsen, em conjunto com princípios da psicologia da forma, Gestalt, e diretrizes contemporâneas de design, como o Material Design.
+
+%Além disso, foram conduzidos dois experimentos, um com estudantes e outro com profissionais, coletando dados sobre as percepções em relação às telas. A diversidade de participantes enriqueceu a pesquisa, proporcionando perspectivas variadas que contribuíram para uma análise abrangente das telas de \ac{UI} e \ac{UX}.
+
+%Após a análise das respostas, foram propostas novas telas com base nas percepções dos usuários, identificando as principais tendências em design de interfaces de sistemas. Constatou-se que a estética pode influenciar na usabilidade, e a preferência dos usuários por certas telas pode estar relacionada a aspectos como layout atrativo, experiência intuitiva, organização clara de informações e distribuição eficiente de campos de entrada.
+
+%Em resumo, este trabalho apresenta uma revisão teórica aprofundada sobre elementos fundamentais no design de interfaces de sistemas, incluindo dois experimentos que coletaram dados sobre as percepções dos participantes em relação às telas. Com base nessas percepções, foram feitas propostas de novas telas e identificadas as principais tendências em design de interfaces de sistemas.
+		
+	%	Para auxiliá-lo com o latex, o Apêndice 
+	%	\ref{cap_exemplos} apresenta os resultados dos comandos incluídos no arquivo ape\_comandos/abntex2-modelo-include-comandos.tex 
+		
+		
+	\end{resumo}
+
+	
+	% ---
+	% inserir lista de ilustrações
+	% ---
+	\listailustracoes
+	% ---
+	
+	% ---
+	% inserir lista de tabelas
+	% ---
+	%\listatabelas
+	% ---
+	
+	% ---
+	% inserir lista de abreviaturas e siglas
+	% ---
+	\listasiglas{abrev/Abreviaturas}
+	% ---
+	
+	% ---
+	% inserir o sumario
+	% ---
+	\sumario
+	% ---
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS TEXTUAIS
+	% ----------------------------------------------------------
+	\mainmatter
+	
+	
+	% ----------------------------------------------------------
+	% Introdução
+	% ----------------------------------------------------------
+	\include{capitulos/introducao}
+	
+	
+	% ----------------------------------------------------------
+	% Fundamentação / Revisão Bibliográfica
+	% ----------------------------------------------------------
+	\include{capitulos/fundamentacao}
+		
+	
+	% ----------------------------------------------------------
+	% Experimentos e avaliação dos resultados
+	% Obrigatório somente para TCC 2
+	% ----------------------------------------------------------
+	\include{capitulos/experimentos}
+	
+	% ---
+	% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+	% ---
+	\bookmarksetup{startatroot} 
+	% ---
+	
+	% ---
+	% Conclusão
+	% Obrigatório somente para TCC 2
+	% ---
+%	\include{capitulos/resultados}
+ 
+	\include{capitulos/conclusao}
+	
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PÓS-TEXTUAIS
+	% ----------------------------------------------------------
+	\postextual
+	
+	% ----------------------------------------------------------
+	% Referências bibliográficas
+	% ----------------------------------------------------------
+	\bibliography{bib/modelo-referencias}
+	
+	% ----------------------------------------------------------
+	% Glossário - opcional
+	% ----------------------------------------------------------
+	%
+	%\glossary
+	
+	% ----------------------------------------------------------
+	% Apêndices  - opcional
+	% ----------------------------------------------------------
+	% ---
+	% Inicia os apêndices
+	% ---
+	\begin{apendicesenv}
+		% Imprime uma página indicando o início dos apêndices
+		\partapendices
+		% ----------------------------------------------------------
+		% Incluir Apêndice
+		% ----------------------------------------------------------
+		
+		% ----------------------------------------------------------
+		% Capitulo com exemplos de comandos inseridos de arquivo externo 
+		% ----------------------------------------------------------
+		\include{apendices/apendiceA}
+		\include{apendices/apendiceB}
+		\include{apendices/apendiceC}
+		
+	\end{apendicesenv}
+	% ---
+	
+	% ----------------------------------------------------------
+	% Anexos  - opcional
+	% ----------------------------------------------------------
+	% ---
+	% Inicia os anexos
+	% ---
+	%\begin{anexosenv}
+		% Imprime uma página indicando o início dos anexos
+		%\partanexos
+		% ---
+		% Incluir Anexo
+		% ---
+		%\chapter{Morbi ultrices rutrum lorem.}
+		
+		%o comando lipsum[] comando serve apenas para incluir texto no documento para efeito de visualização do formato.
+		%\lipsum[1-25]
+		%\section{Test}
+		%\lipsum[1-20]
+		
+		
+	%\end{anexosenv}
+	
+	
+\end{document}
