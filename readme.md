@@ -6,14 +6,13 @@ Este repositório contém o código LaTeX do meu Trabalho de Conclusão de Curso
 
 ## Resumo
 
-Este trabalho aborda o design de interfaces de sistemas, destacando temas como usabilidade, comunicabilidade, acessibilidade, Experiência do Usuário (UX), Interface do Usuário (UI) e técnicas de avaliação da usabilidade. Apresenta uma revisão teórica aprofundada, discutindo conceitos propostos por profissionais renomados, em conjunto com princípios da psicologia da forma, Gestalt, e diretrizes contemporâneas de design, incluindo o Material Design.
+Este trabalho aborda o design de interfaces de sistemas, destacando temas como usabilidade, comunicabilidade, acessibilidade, Experiência do Usuário (UX), Interface do Usuário (UI) e técnicas de avaliação da usabilidade. Apresenta conceitos propostos por profissionais renomados, em conjunto com princípios da psicologia da forma, Gestalt, e diretrizes contemporâneas de design, incluindo o Material Design.
 
-O objetivo geral é realizar um levantamento sobre temas atuais de Interação Humano-Computador (IHC) na área de design de interfaces, com foco em UX e UI, aplicando esses conceitos na prática.
+Com o objetivo geral, o redesign da interface do sistema DebugandoED, explorando conceitos fundamentais de usabilidade, comunicabilidade, acessibilidade, UX e UI. A pesquisa envolveu a revisão teórica desses conceitos e a aplicação prática por meio do redesign da interface.
 
-Isso será exemplificado por meio de um estudo de caso real envolvendo uma plataforma didática web. Para validar a aplicação prática desses conceitos, foi conduzida uma pesquisa por questionário com dois grupos: estudantes e profissionais da área, comparando as telas do sistema web com os conceitos em prática.
+A coleta de percepções de estudantes e profissionais, realizada por questionários, contribuiu para avaliar a eficácia das modificações propostas. Os resultados indicaram a relevância das melhorias sugeridas, destacando a importância da usabilidade e estética na experiência do usuário.
 
-Este estudo proporciona uma compreensão aprofundada dos aspectos cruciais no design de interfaces, contribuindo para o avanço no entendimento das práticas contemporâneas de IHC e evidenciando a aplicação prática desses conceitos em situações do mundo
-real.
+O estudo proporciona percepções valiosas para designers e desenvolvedores, com contribuições que podem ser aplicadas de forma prática.
 
 ## Estrutura do Repositório
 
@@ -32,6 +31,8 @@ real.
 ## Como Compilar o Documento
 
 Para compilar o documento LaTeX, você pode utilizar um ambiente online como [Overleaf](https://www.overleaf.com/). Certifique-se de compilar o documento utilizando o arquivo `main.tex` como ponto de entrada.
+
+Ou visualize por aqui: [TCC](docs/TCC.pdf)
 
 ## Como Contribuir
 

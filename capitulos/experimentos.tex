@@ -1,18 +1,23 @@
 \chapter[Experimentos, Análises e Resultados]{Experimentos, Análises e Resultados}
 \label{capExperimentos}
 
-Este capítulo fará uma análise baseada em \acs{UX} e \acs{UI} da Plataforma DebugandoED. Este capítulo está organizado da seguinte forma: A seção \ref{secExperimentos} apresentará os detalhes do experimento a ser realizado; A seção \ref{Menu_de_Navegação} apresentará os principais conceitos que serão aplicados aos menus do simulador acima; A seção \ref{Conteúdo_na_Pagina_Inicial} apresentará os principais conceitos que serão aplicados ao conteúdo da página inicial; A seção \ref{Campos_de_Entrada_de_Dados} apresentará os principais conceitos que serão aplicados no conteúdo da página principal; As seções \ref{Formulário de Cadastro} e \ref{Formulário de Login} proporão os conceitos da seção \ref{Campos_de_Entrada_de_Dados} em conjunto no formulário de cadastro e login; A seção \ref{Conteúdo das Telas de Simulação} apresentará os principais conceitos que serão aplicados ao conteúdo da página de simulação ou execução.
+Este capítulo fará uma análise baseada em \acs{UX} e \acs{UI} da Plataforma DebugandoED. Este capítulo está organizado da seguinte forma: A seção \ref{secDebugandoED} descreve o sistema DebugandoED utilizado no redesign. A seção \ref{secExperimentos} apresentará os detalhes do experimento a ser realizado; A seção \ref{Menu_de_Navegação} apresentará os principais conceitos que serão aplicados aos menus do simulador acima; A seção \ref{Conteúdo_na_Pagina_Inicial} apresentará os principais conceitos que serão aplicados ao conteúdo da página inicial; A seção \ref{Campos_de_Entrada_de_Dados} apresentará os principais conceitos que serão aplicados no conteúdo da página principal; As seções \ref{Formulário de Cadastro} e \ref{Formulário de Login} proporão os conceitos da seção \ref{Campos_de_Entrada_de_Dados} em conjunto no formulário de cadastro e login; A seção \ref{Conteúdo das Telas de Simulação} apresentará os principais conceitos que serão aplicados ao conteúdo da página de simulação ou execução.
 
-%Este capítulo está organizado da seguinte forma: A seção \ref{Menu_de_Navegação} apresenta os principais conceitos que serão aplicados aos menus do simulador acima; A seção \ref{Conteúdo_na_Pagina_Inicial} apresenta os principais conceitos que serão aplicados ao conteúdo da página inicial, como blocos no corpo da página; A seção \ref{Campos_de_Entrada_de_Dados} apresenta os principais conceitos que serão aplicados no conteúdo da página principal, como os bloco no corpo da página; A seção \ref{Formulário de Cadastro} e \ref{Formulário de Login} irá propor os conceitos da seção \ref{Campos_de_Entrada_de_Dados} em conjunto no formulário de cadastro e login; A seção \ref{Conteúdo das Telas de Simulação} apresenta os principais conceitos que serão aplicados ao conteúdo da página de simulação ou execução, como blocos no corpo da página, modais e demais elementos da página.
+\section{DebugandoED}
+\label{secDebugandoED}
+O DebugandoED desenvolvido por \citeonline{debugandoedsbsi}, representa um esforço inovador para criar uma ferramenta educacional interativa, centrada na simulação de conceitos fundamentais de programação e estrutura de dados. Ao reconhecer a demanda por abordagens pedagógicas mais eficazes, o projeto concentrou-se em desenvolver um simulador acessível por meio de uma plataforma web, proporcionando aos alunos uma experiência prática e dinâmica \cite{borges2021ensino}.
+
+O site, acessível através do endereço “\href{https://debugandoed.facom.ufu.br}{https://debugandoed.facom.ufu.br}”, foi concebido após um estudo aprofundado envolvendo professores de programação e estrutura de dados. O objetivo inicial foi identificar as principais dificuldades enfrentadas pelos alunos nesses cursos. O resultado desse estudo direcionou o desenvolvimento do simulador, com foco nas estruturas básicas de programação, como vetor, matriz, ponteiro, pilha, fila, e listas.
+
+Ao contrário de muitos simuladores disponíveis na literatura, o DebugandoED vai além da simples representação visual de interações. Ele oferece aos usuários a capacidade de observar não apenas o resultado visível, mas também os comandos executados e as mudanças na memória. Essa abordagem única visa proporcionar uma compreensão mais profunda dos conceitos, permitindo que os usuários realizem “debug” de estruturas sem a necessidade de \ac{IDE} ou conhecimentos avançados de programação.
 
 \section{Experimento}
 \label{secExperimentos}
-
-A proposta deste trabalho é aplicar os conceitos e princípios apresentados no \autoref{capFund} à plataforma DebugandoED. Não serão abordadas todas as telas da plataforma, pois algumas delas são, basicamente, os mesmos objetos aplicados a uma nova situação. Serão analisados: menu de navegação, conteúdos da página inicial, campos de entrada de dados, formulário de cadastro, formulário de login e telas de simulação. Para cada um dos itens descritos, a proposta é aplicar o conceito/princípio e propor uma modificação que seja condizente com os mesmos.
+A proposta deste trabalho é aplicar os conceitos e princípios apresentados no \autoref{capFund} à plataforma da \autoref{secDebugandoED}. Não serão abordadas todas as telas da plataforma, pois algumas delas são, basicamente, os mesmos objetos aplicados a uma nova situação. No entanto, foi adotado uma abordagem específica para a análise. Será analisado: menu de navegação, conteúdos da página inicial, campos de entrada de dados, formulário de cadastro, formulário de login e telas de simulação. Para cada um desses itens, a proposta é realizar uma inspeção de usabilidade, aplicando os conceitos e princípios relevantes e propor modificações que seja condizente com os mesmos.
 
 \subsection{Base dos Estudos}
 
-A plataforma DebugandoED\footnote{\url{https://debugandoed.facom.ufu.br/}} será utilizada como estudo de caso para a aplicação dos conceitos e princípios apresentados no \autoref{capFund}. Esta plataforma simula estruturas de dados visando abordar os conceitos das estruturas de dados abordados em sala de aula, apresentando de maneira visual e de forma prática as estruturas sem a necessidade do usuário realmente programar a estrutura em questão. A plataforma foi pensada para que não seja necessária a instalação de qualquer software e, com isso, seu acesso é por meio de um navegador web. A tela inicial da plataforma pode ser visualizada na \autoref{debugandoED01}. A plataforma está em constante evolução e está sendo implementada a parte de \textit{gamificação}, com isso, pode ser que algumas telas, com o passar do tempo, possam estar modificadas quando comparadas com as apresentadas neste trabalho.
+A plataforma da \autoref{secDebugandoED} será utilizada como estudo de caso para a aplicação dos conceitos e princípios apresentados no \autoref{capFund}. Esta plataforma simula estruturas de dados visando abordar os conceitos das estruturas de dados abordados em sala de aula, apresentando de maneira visual e de forma prática as estruturas sem a necessidade do usuário realmente programar a estrutura em questão. A plataforma foi pensada para que não seja necessária a instalação de qualquer software e, com isso, seu acesso é por meio de um navegador web. A tela inicial da plataforma pode ser visualizada na \autoref{debugandoED01}. A plataforma está em constante evolução e está sendo implementada a parte de \textit{gamificação}, com isso, pode ser que algumas telas, com o passar do tempo, possam estar modificadas quando comparadas com as apresentadas neste trabalho.
 
 \begin{figure}[ht]
     \begin{center}
@@ -26,7 +31,7 @@ A plataforma DebugandoED\footnote{\url{https://debugandoed.facom.ufu.br/}} será
 \subsection{Menu de Navegação}
 \label{Menu_de_Navegação}
 
-De acordo com o seção de Design de Interfaces (\autoref{Design de Interfaces (UI)}) e a Heurísticas de Estética e Design minimalista de Jakob Nielsen (\autoref{Heurísticas de Jakob Nielsen}), nota-se no menu de opções apresentado na \autoref{debugandoED01}, um desacordo na utilização de cores e contrastes, logo nota-se não haver uma padronização na escala de cores utilizadas.
+De acordo com o seção de Design de Interfaces (\autoref{Design de Interfaces (UI)}) e a Heurísticas de Estética e Design minimalista de Jakob Nielsen (\autoref{Heurísticas de Jakob Nielsen}), nota-se no menu de opções apresentado na \autoref{debugandoED01}, um desacordo na utilização de cores e contrastes, onde o menu é fundo preto com texto em cor cinza, logo nota-se não haver uma padronização na escala de cores utilizadas.
     
 Um simples ajuste de fonte e cor, obtém um contraste melhor e por consequência mais legibilidade, optando-se pelo branco como cor da fonte ao invés do cinza (\autoref{debugandoED-menu} - B) e aumentando o peso da fonte (\autoref{debugandoED-menu} - C).
     
@@ -98,8 +103,7 @@ O mesmo pode ser notado na \autoref{debugandoED-bloco-antes-depois-01} (B) uma e
 
 Na \autoref{debugandoED-inputs}, pode-se notar que o sistema possui dois estilos diferentes de entrada de dados, logo não possui uma padronização nos \textit{inputs}.
 
-Observando com mais cuidado, pode-se notar que várias heurísticas da \autoref{Heurísticas de Jakob Nielsen} são descumpridas, como: Consistência e padrões, Prevenção de erros, Estética e Design minimalista e Auxiliar usuários a reconhecer, diagnosticar e recuperar erros e no princípio da Proximidade da \autoref{Princípios de Gestalt}.
-
+Observando com mais cuidado, pode-se notar que várias heurísticas da \autoref{Heurísticas de Jakob Nielsen} são descumpridas, como: Consistência e padrões, nem todos campos possuem “labels”; Prevenção de erros, nem todos campos possuem “tooltip” indicando erros; Estética e Design minimalista e Auxiliar usuários a reconhecer, campos com variados tamanhos; diagnosticar e recuperar erros, informar melhor ao usuário o erro; e no princípio da Proximidade da \autoref{Princípios de Gestalt}, utilizar do espaçamento para melhor entendimento.
 
 \begin{figure}[ht]
     \begin{center}
@@ -127,7 +131,7 @@ E os outros pontos citados no início desta seção, são resolvidos com a simpl
 
 Pensando-se na experiência do usuário, obviamente deve-se realizar uma pesquisa antes de qualquer tomada de decisão, mas pode-se notar na \autoref{debugandoED-form-antes-depois} - Antes, alguns pontos como: o campo de \texttt{Confirmação de email} e a seleção de \textbf{imagem para o perfil} aparentam ser desnecessários, a confirmação do endereço eletrônico pode ser verificada com o envio de um email solicitando uma verificação onde também aumenta a segurança garantindo que aquele endereço eletrônico utilizado no momento do cadastro é de fato do usuário, e a imagem para perfil é algo completamente desnecessário nesse momento, pois tal opção já existe na edição do perfil, sendo assim o formulário fica mais limpo.
 
-Outro ponto é no campo de \textbf{Instituição de ensino}, onde é um \textit{input} do tipo de seleção, porém existem muitas opções para selecionar, podendo deixar alguns usuários perdidos, para melhorar tal campo a adição de digitar e filtrar entre essas opções traria uma grande melhora na experiência do usuário, maior ainda se fosse um campo auto completar.
+Outro ponto relevante a ser considerado é o campo de \textbf{Instituição de ensino}, que atualmente é um \textit{input} do tipo seleção. Contudo, ao analisar a quantidade considerável de opções disponíveis, percebe-se que essa abordagem pode deixar alguns usuários um pouco perdidos. Na minha opinião, uma maneira eficaz de aprimorar esse campo seria permitir a inserção direta e a filtragem entre as opções, o que, sem dúvida, traria uma significativa melhoria na experiência do usuário. Essa melhoria seria ainda mais impactante se fosse implementado um recurso de auto completar, tornando a interação ainda mais intuitiva e eficiente
 
 O método citado acima pode ser utilizado em demais campos de seleção, como também transformar os campos de \textbf{Estado} e \textbf{Cidade} para seleção utilizando a \ac{API} de localidades\footnote{\url{https://servicodados.ibge.gov.br/api/docs/localidades}} do IBGE disponibilizada gratuitamente pra propósitos de se obter estados e cidades filtrados.
 
@@ -144,10 +148,9 @@ A demonstração dos pontos citados anteriormente pode ser visualizados na \auto
 
 \subsection{Formulário de Login}
 \label{Formulário de Login}
+Como discutido na \autoref{Formulário de Cadastro}, os princípios da Continuidade e do Ponto Focal mantêm sua relevância na \autoref{debugandoED-form-login-antes-depois}. Neste contexto, destaco a presença de dois botões, sendo que o local do botão mais à direita não possui uma importância destacada neste fluxo específico. Para contornar essa situação, optou-se por remover o botão de cadastro, substituindo-o de maneira sucinta por um link posicionado logo abaixo do botão “Entrar”.
 
-Como citado na \autoref{Formulário de Cadastro} os princípios da Continuidade e do Ponto Focal também são relevantes na \autoref{debugandoED-form-login-antes-depois}, devido a ter dois botões onde o mais a direita não possuiu maior importância neste fluxo, isto é contornado removendo o botão de cadastro e de forma sucinta substituído por um link, logo abaixo do botão Entrar.
-
-Outro ponto relevante aqui é um pouco sugestivo, pois se trata do princípio da Região Comum da \autoref{Princípios de Gestalt}, onde facilmente é resolvido com alguns espaçamentos ou a simples remoção das linhas horizontais já empregaria tal espaçamento necessário.
+Outro ponto que merece atenção, e isso se refere ao princípio da Região Comum, conforme apresentado na \autoref{Princípios de Gestalt}. A solução para esse aspecto é relativamente simples, pois a aplicação de espaçamentos adequados ou até mesmo a remoção das linhas horizontais já seria o suficiente para proporcionar o espaçamento necessário e melhorar a organização visual do layout.
 
 \begin{figure}[htb]
     \begin{center}
@@ -209,14 +212,14 @@ As melhorias projetadas nas Figuras \ref{debugandoED-ponteiro-depois-01} e \ref{
     \begin{center}
         \includegraphics[scale=0.25]{figs/debugandoED-ponteiro-depois-01.png}
     \end{center}
-    \caption{\label{debugandoED-ponteiro-depois-01}Simulação de Ponteiro - Melhorias Implementadas 01}
+    \caption{\label{debugandoED-ponteiro-depois-01}Simulação de Ponteiro - Melhorias Projetadas 01}
 \end{figure}
 
 \begin{figure}[htb]
     \begin{center}
         \includegraphics[scale=0.25]{figs/debugandoED-ponteiro-depois-02.png}
     \end{center}
-    \caption{\label{debugandoED-ponteiro-depois-02}Simulação de Ponteiro - Melhorias Implementadas 02}
+    \caption{\label{debugandoED-ponteiro-depois-02}Simulação de Ponteiro - Melhorias Projetadas 02}
 \end{figure}
 
 Apresentando uma \ac{UI} aprimorada, com a utilização de esquemas de cores e tipografia para melhorar a legibilidade e a hierarquia visual, seguindo os princípios da \autoref{Princípios de Gestalt} para agrupamento e alinhamento. O design limpo e intuitivo promove uma experiência de usuário \ac{UX} positiva, em conformidade com as heurísticas de usabilidade da \autoref{Heurísticas de Jakob Nielsen}, particularmente no que diz respeito à consistência e padronização dos elementos de \ac{UI}.
@@ -224,11 +227,6 @@ Apresentando uma \ac{UI} aprimorada, com a utilização de esquemas de cores e t
 A estrutura da informação e os elementos de navegação foram reorganizados para dar ao usuário maior controle e liberdade, permitindo uma exploração mais fluída e natural. Isso é evidente na inclusão de \textit{tooltips} e modais informativos, que são facilmente acessíveis sem interromper a tarefa do usuário, alinhando-se com o princípio de Ajuda e documentação das heurísticas de Nielsen.
 
 Essas melhorias de interface não apenas aprimoram a estética, mas também reforçam a funcionalidade e a eficácia pedagógica da simulação, ao passo que a experiência de aprendizado se torna mais engajante e menos suscetível a erros de interpretação ou operação
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%              Análises                   %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Análise das Propostas por Experimento}
 
@@ -245,14 +243,12 @@ Para a realização dos experimentos, foi criado dois questionários para coleta
 
 Todos os detalhes sobre os questionários, bem como todas as questões utilizadas, estão no \autoref{questionario_de_pesquisa}.
 
-%A seção \ref{Pesquisa_de_Opinião_com_Estudantes}, concentra-se nas respostas e percepções compartilhados por um grupo representativo de estudantes universitários. Esses jovens representam a próxima geração de profissionais e pesquisadores nesta área de estudo. Suas opiniões e perspectivas podem oferecer uma visão valiosa sobre como a pesquisa e o conhecimento estão sendo percebidos pelos futuros atores do campo.
-
-%A seção \ref{Pesquisa_de_Opinião_com_Profissionais}, concentra-se nas respostas e percepções coletadas junto a um grupo seleto de especialistas e profissionais da área. Esses participantes foram escolhidos por sua vasta experiência e conhecimento no domínio de estudo. Suas opiniões são fundamentais para oferecer uma perspectiva madura e experiente sobre as questões abordadas nesta pesquisa.
-
 \subsection{Pesquisa de Opinião com Estudantes}
 \label{Pesquisa_de_Opinião_com_Estudantes}
 
 A pesquisa contou com a participação de um grupo diversificado de 33 respondentes, incluindo indivíduos de diferentes gêneros, faixas etárias, níveis de escolaridade e profissões, como ilustrado nas Figuras \ref{APB_01} e \ref{APB_02}. Os participantes variaram desde estudantes do ensino médio até aqueles com pós-doutorado e experiência em áreas como tecnologia, atendimento ao cliente, e ciências biológicas. Além disso, houve uma distribuição de níveis de experiência, com participantes desde juniores até sêniores em suas carreiras.
+
+Para garantir a integridade ética da coleta de percepções, foram adotadas medidas cuidadosas. Preocupações éticas relacionadas à privacidade e confidencialidade foram consideradas durante a coleta. Os questionários foram elaborados de forma anônima, dispensando a identificação dos participantes, o que assegura a proteção dos dados coletados. Adicionalmente, foi solicitado o consentimento informado dos participantes antes da aplicação dos questionários. Esse processo esclareceu os objetivos da pesquisa, garantindo a livre escolha de participação e reforçando a importância da proteção dos dados.
 
 Além de suas características demográficas e educacionais, os participantes também foram questionados sobre seu conhecimento em \ac{UI} e \ac{UX}, \autoref{APB_03}, com algumas pessoas afirmando ter um entendimento desses conceitos, enquanto outras não estavam familiarizadas. No que diz respeito à \ac{UI}, 18 participantes afirmaram ter conhecimento, enquanto 15 declararam não estar familiarizados. Quanto à \ac{UX}, 13 participantes afirmaram ter conhecimento, enquanto 20 indicaram não estar familiarizados com o termo.
 
@@ -261,8 +257,6 @@ Esta diversidade de perfil dos participantes enriqueceu a pesquisa, fornecendo u
 Além disso, é importante destacar que o \autoref{respostas_dos_estudantes} contém capturas de tela detalhadas exclusivamente das respostas do grupo de estudantes, proporcionando uma visão mais aprofundada das percepções dessa parcela específica de participantes na pesquisa.
 
 Após a análise e avaliação das respostas dos participantes, tem-se: 
-
-%A seguir, apresentaremos as conclusões e \textit{insights} obtidos com base nas respostas e avaliações desses participantes.
 
 \begin{itemize}
     \item \textbf{Análise das Telas de Login}
