@@ -1,6 +1,7 @@
 # Redesign da Interface do Sistema DebugandoED e Investigação das Percepções de Estudantes e Profissionais sobre a Proposta
 
-**Autor:** Felipe Antônio Justino Zanetti
+**Autor:** Felipe Antônio Justino Zanetti - felipeajzanetti@gmail.com
+**Orientador:** Prof. Dr. Thiago Pirola Ribeiro - thiagopirola@gmail.com
 
 Este repositório contém o código LaTeX do meu Trabalho de Conclusão de Curso (TCC), intitulado "Redesign da Interface do Sistema DebugandoED e Investigação das Percepções de Estudantes e Profissionais sobre a Proposta". Este trabalho foi desenvolvido como parte dos requisitos para a conclusão do curso de Sistemas de Informação na Universidade Federal de Uberlândia - Campus Monte Carmelo.
 
