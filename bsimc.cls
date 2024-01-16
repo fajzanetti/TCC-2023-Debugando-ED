@@ -44,7 +44,7 @@
 
 \counterwithout{equation}{chapter}
 \setsecnumdepth{subsubsection}
-\settocdepth{subsection}
+\settocdepth{subsubsection}
 
 \newsubfloat{figure}
 
