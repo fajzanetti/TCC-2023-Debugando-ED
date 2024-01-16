@@ -1,5 +1,5 @@
 # Sumário
-- 1. [INTRODUÇÃO](TCC.pdf#pagina=10)
+- 1. [INTRODUÇÃO](TCC.pdf#page=10)
    - 1.1 [Objetivos](#objetivos)
       - 1.1.1 [Objetivo Geral](#objetivo-geral)
       - 1.1.2 [Objetivos Específicos](#objetivos-específicos)
