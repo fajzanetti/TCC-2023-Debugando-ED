@@ -35,8 +35,8 @@ O estudo proporciona percepções valiosas para designers e desenvolvedores, com
 Para compilar o documento LaTeX, você pode utilizar um ambiente online como [Overleaf](https://www.overleaf.com/). Certifique-se de compilar o documento utilizando o arquivo `main.tex` como ponto de entrada.
 
 Onde visualizar: 
-[Repositório Institucional - Universidade Federal de Uberlândia](https://repositorio.ufu.br/handle/123456789/41005)
-[PDF](docs/TCC.pdf)
+- [Repositório Institucional - Universidade Federal de Uberlândia](https://repositorio.ufu.br/handle/123456789/41005)
+- [Documento PDF](docs/TCC.pdf)
 
 ## Como Contribuir
 
